@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define rep(a, b) for (int i = a; i < b; i++)
-const int M = 1e9 + 7;
-const int N = 1e3 + 7;
+
 
 int partition(int arr[], int s, int e)
 {
