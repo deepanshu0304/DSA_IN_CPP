@@ -1,15 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define rep(a, b) for (int i = a; i < b; i++)
-const int M = 1e9 + 7;
-const int N = 1e3 + 7;
-/*
-SPACE COMPLEXITY  - 0(1)
-TIME COMPLEXITY - 0(n^2)
-BEST TIME  - 0(n)
-WORST CASE - 0(n^2)
-*/
+
+
 int main() 
 {
     int n;
@@ -41,3 +33,9 @@ int main()
     }
     return 0;
 }
+/*
+SPACE COMPLEXITY  - 0(1)
+TIME COMPLEXITY - 0(n^2)
+BEST TIME  - 0(n)
+*/
+// Insertion sort is in-pace and stable algorithm.
