@@ -1,23 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-int main() 
-{
-    int n;
-    cin >> n;
-    int arr[n];
-    // input
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-
-    
-/*
-Here we divide array in two part where starting part is sorted and last part is unsorted...So we pick element one by one from unsorted part
-and put that in it's correct position in sorted part...Initially we assume only the first element to be sorted (arr[0]).
-*/
+void insertionSort(int n , int arr[]){
+    /*
+     Here we divide array in two part where starting part is sorted and last part is unsorted...So we pick element one by one 
+     from unsorted part and put that in it's correct position in sorted part...
+     Initially we assume only the first element to be sorted (arr[0]).
+   */
     for (int i = 1; i < n; i++)
     {
         int target_element = arr[i]; // element to be put in it's correct position
@@ -37,8 +26,21 @@ and put that in it's correct position in sorted part...Initially we assume only 
                 break;
         }
         arr[j + 1] = target_element;
-    }    
+    } 
+}
 
+int main() 
+{
+    int n;
+    cin >> n;
+    int arr[n];
+    // input
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    insertionSort(n , arr);
     
     // printing the array
     for (int i = 0; i < n; i++)
