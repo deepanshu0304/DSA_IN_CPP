@@ -15,9 +15,9 @@ using namespace std;
 class Node
 {
 public:
-    int data;
+    int data; // value stored by our node
     Node *next;
-    // connstructor
+    // paramaterized constructor
     Node(int d)
     {
         this->data = d;
