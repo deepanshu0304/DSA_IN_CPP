@@ -1,3 +1,15 @@
+/*
+1.) Link list is data structure which is very similar to array.
+2.) Array have continous allocation but linklist dont.
+3.) As array have continous allocation you can access it easily if we are given with address of first element.
+4.) But for linkList we can not do this so we also need to store the address of the next element.
+5.) So a LinkList is collection of nodes(user defined data-type) which can store data of same type like arrays
+6.) Where each node has mainly two properties. i) data we waqnt to store(int , char, string,vector,etc..). ii) address of next element
+7.) Basic knowledge of classes,constructor,dynamic allocation is required.
+For classes you can refer this ---> (https://www.w3schools.com/cpp/cpp_classes.asp).
+I will upload classes in somedays.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 class Node
@@ -97,13 +109,12 @@ void deleteNode(Node *&head,Node * &tail, int pos)
 }
 
 int main()
-{
+{ 
+    // print is method defined which will print whole linkList...you can add remove elemenmts using different methods ans can check using
+    // print function 
 
     // Node n1(10);             // static allocation
     Node *n2 = new Node(16); // dynamic allocation
-    // cout << n1.data << " " << n1.next;
-
-    // cout << n2->data << endl;
 
     Node *head = n2; // this will point to head
     // now we also want that we can insert element in backward also hen we need to maintai tail
@@ -119,17 +130,17 @@ int main()
     // print(head);
 
     insertAtTail(tail, 44);
-    print(head);
+    // print(head);
 
     insertAtPosition(head, tail, 5, 18);
-    print(head);
+    // print(head);
 
-    cout << head->data << " " << tail->data<<endl;
+    // cout << head->data << " " << tail->data<<endl;
 
     deleteNode(head,tail, 5);
-    print(head);
+    // print(head);
     
 
-    cout << head->data << " " << tail->data<<endl;
+    // cout << head->data << " " << tail->data<<endl;
     return 0;
 }
