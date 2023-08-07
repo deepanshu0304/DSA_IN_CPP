@@ -1,3 +1,8 @@
+// You can skip this file ..I made this file where I included all the common linkedlist properties and methods so that 
+// we can use this in other files without writing all the things again and again.
+//All the content of this file is explained in 01_link_list_single.cpp
+
+
 #include <bits/stdc++.h>
 using namespace std;
 class Node
