@@ -16,7 +16,7 @@ class Node
 {
 public:
     int data; // value stored by our node
-    Node *next;
+    Node *next; // pointer pointing to next node of linked list
     // paramaterized constructor
     Node(int d)
     {
@@ -44,7 +44,7 @@ void insertAtTail(Node *&tail, int d)
 void insertAtPosition(Node *&head, Node* &tail, int pos, int d)
 {
 
-    // all i need to do is travel till pos-1 change its address to new node
+    // all we need to do is travel till pos-1 change its address to new node
     // and newnode->pos is equal to the (pos-1)->index;
 
     // handling if position is one
@@ -72,11 +72,20 @@ void insertAtPosition(Node *&head, Node* &tail, int pos, int d)
 
 void print(Node *&head)
 {
-    Node *temp = head;
+    /* 
+    1.) We will receive head of link list.
+    2.) We will traverse whole link list and will the data stored in it.
+    3.) Every node will contain the address of next node except last which will contain NULL( absence of value).
+    4.) So we will make a pointer pointing to head and we will always change its value to its next pointer and print its data.
+    5.) We will terminate when we reach NULL.
+    
+       */
+    
+    Node *temp = head; // intialized pointer as specified in step-4.
     while (temp != NULL)
     {
-        cout << temp->data << " ";
-        temp = temp->next;
+        cout << temp->data << " "; // printing its data.
+        temp = temp->next; // changing our pointer address to point to next node.
     }
     cout << endl;
 }
@@ -113,31 +122,35 @@ int main()
     // print is method defined which will print whole linkList...you can add remove elemenmts using different methods ans can check using
     // print function 
 
-    // Node n1(10);             // static allocation
-    Node *n2 = new Node(16); // dynamic allocation
-
-    Node *head = n2; // this will point to head
-    // now we also want that we can insert element in backward also hen we need to maintai tail
-    Node *tail = n2;
+    
+    // Node n1(10);   // static allocation
+    Node *head = new Node(16); // dynamic allocation
+    // intitialized a head of our link list with value of 16 and whose next pointer will be pointing to NULL.
+   
+    // we can always insert a element at start of linklist but sometime its required to insert new element at end of link list.
+    // so for that we need to maintain tail also
+    // as currently there is only single node in our linklist so that node will be head and tail also.
+    
+    Node *tail = n2; // head and tail pointing to same node.
     // because if there is single element it is head and it is tail also
     cout << n2 << " " << head << endl;
     // print(head);
 
-    insertAtHead(head, 12);
+    insertAtHead(head, 12);  // this function will insert a node with value 12 at start of linklist
     // print(head);
 
     insertAtHead(head, 123);
     // print(head);
 
-    insertAtTail(tail, 44);
+    insertAtTail(tail, 44);  // this function will insert a node with value 44 (you can take value and send here) at end of linklist
     // print(head);
 
-    insertAtPosition(head, tail, 5, 18);
+    insertAtPosition(head, tail, 5, 18);  // this funtion receive  4 parameters i) head of list ii) tail iii) position iv) value of node
     // print(head);
 
     // cout << head->data << " " << tail->data<<endl;
 
-    deleteNode(head,tail, 5);
+    deleteNode(head,tail, 5); // It will delete node from linklist whose value is 5..In case of duplicate it will delete first instance.
     // print(head);
     
 
