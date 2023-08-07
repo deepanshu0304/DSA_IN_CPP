@@ -27,10 +27,14 @@ public:
 
 void insertAtHead(Node *&head, int d)
 {
-    Node *temp = new Node(d);
+    Node *temp = new Node(d); // created a new node with the value received as parameters.
     temp->next = head;
+    /*
+    Now the new node will be the first node so it's next pointer should point to the head(which was previously first node but now it will 
+    become second..
+    */
     // cout << head << endl;
-    head = temp;
+    head = temp;  // as new node is our first node 
     // cout << head << endl;
 }
 
