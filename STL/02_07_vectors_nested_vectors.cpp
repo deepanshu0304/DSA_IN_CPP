@@ -21,8 +21,8 @@ int main()
         int n;
         cin >> n;
         v.push_back(vector<int> ());/*
-        in previous file you saw there should be smtg in in to access vector by using this type 
-        so we inserted a empty vector in it so that we can acess this type 
+        in previous file we saw there should be smtg in it to access vector by index 
+        so we inserted a empty vector in it so that we can acess directly
         .....generaly we not prefer this method ....but keep this in mind */
         for (int j = 0; j < n; j++)
         {
