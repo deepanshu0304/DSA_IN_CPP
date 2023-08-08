@@ -32,6 +32,8 @@ i.) a=a+1;
 ii.) a++;
 Here meaning of i.) and ii.) are same they will do same operation
 but in case of iterators these two are different things (except vectors)..
-if we do it = it+1 ....it will take 
+if we do it = it+1 ....it will take us to the next address( now for linear structure next address in memory and 
+address for next element is same but for non linear data structure they are different so we need to carefully use these things...
+we will use it++ which will take us to the next element of tha data structure.
 
 */
