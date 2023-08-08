@@ -22,9 +22,9 @@ int main()
      vector<int> &v2= v;
   
      v2.push_back(5);  // as you passed refrence now the changes in v2 will also reflect in v....
-     printvec(v);   // in this the changes is function happenend and in down line it will reflect in output
-     printvec(v);   
-     printvec(v2);   // also changes in v will reflect in v2
+     printvec(v);      // In function  we added a line which is pushing an element in vector...
+     printvec(v);    // As the vector was passed by reference the value added in prev func will reflect here.
+     printvec(v2);   // V2 is also reference of V so the same changes will also appear in V2.
     
 
     return 0;
