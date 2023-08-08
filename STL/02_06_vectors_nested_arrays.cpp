@@ -17,7 +17,7 @@ int main()
     // Array of vectors
     int N;
     cin >> N;
-    vector<int> v[N];
+    vector<int> v[N]; // this mean every index of an array is a vector.
     for (int i = 0; i < N; i++)
     {
         int n;
@@ -34,7 +34,8 @@ int main()
         printvec(v[i]);
     }
 
-    cout<<endl<<v[0][2];
+    cout<<endl<<v[0][2]; /*Here v is array so v[0] will be a vector and in vector we can also access by index so v[0][2] will
+                         print the third element of first vector. */
 
     return 0;
 }
