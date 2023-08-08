@@ -11,7 +11,7 @@ void printvec(vector<int> v){
 }
 
 int main(){
-    // you can preset the the size of vector
+       // you can define the the size of vector
        // vector <int> v(10);  --> if you write this it mean 10 size vector is created and all are initialized by 0..
        vector <int> v(10,3);  // this mean initialized by 3
         v.push_back(7);
@@ -20,11 +20,10 @@ int main(){
         v.pop_back();  // will remove the last element of vector
         printvec(v);
 
-         vector<int> v2 = v;
+         vector<int> v2 = v;   // Time complexity is 0(n)
       /*
-      now the upper thing you can not do in array ....copying the whole vector
-      you can do this in array by using pointer but that is diffrent ...if you change in array2 it will change array also
-      but here if you change v2 it will not effect v......
+      Now unlike array we can copy whole vector as shown above
+      In array it is possible by using pointers but that is not copy because they will be pointing to same memory address.
       */ 
         v2.push_back(6);
          printvec(v);
@@ -32,8 +31,3 @@ int main(){
 
     return 0;
 }
-/*
-now copying the vector is simply one line step with using assignment operator
-but its time complexity is not 0(1)....
-its actually 0(n)......as all element are being copying one by one
-*/
