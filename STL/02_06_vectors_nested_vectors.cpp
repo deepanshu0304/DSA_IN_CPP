@@ -15,10 +15,11 @@ int main()
 {
     int N;
     cin >> N;
-    vector<vector<int>> v; /*
-    in upper line only vector is created now you cn not directly access v[anything]..as it's not there...
-    you need to push back something in vector to acees this type .
-    if you define size of vector then you can access this type 
+    vector<vector<int>> v; 
+    /*
+    Above only vector is created now you can not directly access v[anything]..because we have't defined anything
+    you need to push  something in vector to access it.
+    if you define size of vector then you can access this 
     if you not define vector size you can not use cin to take input also..
     */
     for (int i = 0; i < N; i++)
