@@ -2,7 +2,8 @@
 using namespace std;
 
 int main(){
-    // swapping of number...
+    // swapping of number..
+// Its very common interview question...they ask to swap two numbers without using extra variables.....
     int a =45;
     int b = 56;
     a = a^b;
