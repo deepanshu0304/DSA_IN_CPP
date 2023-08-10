@@ -64,7 +64,7 @@ int main()
         int p = n&(~((1<<(4+1))-1));
         printbinary(p);
         
-        // how to unset all msb bit upto given index....do by own..\
+        // how to unset all msb bit upto given index....Try it youself..\
 
 
 
