@@ -2,7 +2,7 @@
 using namespace std;
 /*
 in preivous file we learnt recursive method which take more time than iterative method
-so itereative methos is recommended ...when you find time complexity  it will be same but still it is good
+so itereative method is recommended ...when you find time complexity  it will be same but still it is good
 In general iteration is better than recursion
 */
 const int M = 1e9 + 7;
