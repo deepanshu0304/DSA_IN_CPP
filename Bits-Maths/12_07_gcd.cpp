@@ -12,7 +12,7 @@ int main()
   int a, b;
   cin >> a >> b;
   cout << gcd(a, b) << endl;
-  cout << __gcd(a, b) << endl;
+  cout << __gcd(a, b) << endl; //inbuilt function provided by c++..
   return 0;
 }
 // Approx time complexity of this function is log(n)....
