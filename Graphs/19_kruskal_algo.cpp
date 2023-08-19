@@ -11,7 +11,7 @@ given a grph we need to find a tree in that graoh such that
 the sum of edges of that graph is minimum
 
 
-?Kruskal's Algorithm
+Kruskal's Algorithm
 we will treat each vertex as individual
 and also store the edges in ascending order
 now one by one we will take one edge and attach it to their respective node if after inseting that
@@ -40,10 +40,20 @@ void Union(int a, int b)
     b = find(b);
     if (a != b)
     {
-        if (siz[a] < siz[b])
-            swap(a, b);
-        par[b] = a;
-        siz[a] += siz[b];
+        if (siz[a] < siz[b]){
+          par[a]=b;
+
+}
+else if{
+par[b] = a;
+}
+
+        
+        else{
+par[a]=b;
+siz[b]++;
+
+}
     }
 }
 int main(){
