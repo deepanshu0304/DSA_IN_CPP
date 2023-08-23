@@ -2,11 +2,19 @@
 using namespace std;
 class Employee
 {
+
+Variable declared in class is called Properties
+Function declared in class is called Methods.
+
+
 public: /* there are three type of access modifier
  public , private , protected
- public --> u can access element out of class
- private --> u can  not access element out of class
- protected--> somewhere between public and private...means u can access them in derived classes
+
+ public --> we can access properties and methods out of class
+
+ private --> we can access properties and methods  only inside the class.
+
+ protected-->  we can access properties and methods in derived classes
 
  By default in C++ class is private....
   */
