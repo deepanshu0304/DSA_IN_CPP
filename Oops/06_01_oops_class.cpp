@@ -37,10 +37,7 @@ int main()
     employee2.Age = 35;
     employee2.IntroduceYourself();
     /*
-      Q) Suppose u have to create 100 employees then how will u create ?
-
-      Ans - By help of constructor
-    */
+ 
 
     return 0;
 }
