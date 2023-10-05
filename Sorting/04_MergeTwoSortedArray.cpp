@@ -22,7 +22,6 @@ vector<int> mergeTwoSortedArray(int n1, int arr1[], int n2, int arr2[])
         {
             ans[mainIndex] = arr1[i];
             i++;
-            mainIndex++;
         }
         // else we are taking element from arr2 and will increase arr2 index for next comparison
         else
@@ -30,6 +29,7 @@ vector<int> mergeTwoSortedArray(int n1, int arr1[], int n2, int arr2[])
             ans[mainIndex] = arr2[j];
             j++;
         }
+        mainIndex++;
     }
 
     // we are not sure if their sizes are same they can be different so what if n1 has still element left
